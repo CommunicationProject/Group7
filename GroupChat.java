@@ -25,11 +25,21 @@ public class GroupChat {
 	}
 	
 	public boolean login() {
-		return false;
+		if (Message.getType() == "login") {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 	
 	public boolean logout() {
-		return false;
+		if (Message.getType() == "logout") {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 	
 	public String search(String text) {

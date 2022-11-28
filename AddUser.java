@@ -19,7 +19,9 @@ public class AddUser {
 		in.close();
 	}
 	
-	public void logout() {}
+	public void logout() {
+		System.out.println("User is logged out");
+	}
 	
 	public void login(String username, String password) {
 		while ((username != this.username) || (password != this.password)) {
