@@ -23,5 +23,12 @@ public class IndividualChat {
 		in.close();
 	}
 	
-	public void getNotification() {}
+	public void getNotification() {
+		if (Chat.messageList.length == 1) {
+			System.out.println("New message available");
+		}
+		else if (Chat.messageList.length >= 2) {
+			System.out.println("New messages available");
+		}
+	}
 }
